@@ -1,0 +1,96 @@
+#panelLogin{
+    position:relative;
+     width:50%;
+     height:60%;
+     top:20%;
+     left:25%;
+     margin:-100px 10 10 -150px;
+    
+}
+
+
+
+h3 {
+  text-align:center;
+  margin:0 0 40px;
+    width: auto;
+    height: auto;
+    color: white;
+    
+    
+}
+
+h6{
+    text-align: left;
+    color: floralwhite;
+    
+}
+
+body{
+    
+    background: white;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.solicitud{
+    
+    background-color: beige;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+  }
+
+
+
+/*Materialize*/
+/* label color */
+   .input-field label {
+     color: white;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: white;
+   }
+.input-field input[type=email]:focus + label {
+     color: white;
+   }
+.input-field input[type=password]:focus + label {
+     color: white;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 2px solid green;
+     box-shadow: 0 1px 0 0 grey;
+     color: white;
+   }
+    .input-field input[type=email]:focus {
+     border-bottom: 2px solid green;
+     box-shadow: 0 1px 0 0 grey;
+   }
+
+    .input-field input[type=password]:focus {
+     border-bottom: 2px solid green;
+     box-shadow: 0 1px 0 0 grey;
+   }
+ 
+   .input-field input[type=date]:focus {
+     border-bottom: 2px solid green;
+     box-shadow: 0 1px 0 0 grey;
+     color: white;
+   }
+
+    .input-field input[type=time]:focus {
+     border-bottom: 2px solid green;
+     box-shadow: 0 1px 0 0 grey;
+     color: white;
+   }
+ 
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #000;
+   }

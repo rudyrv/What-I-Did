@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+    <script src="materialize/js/materialize.js"></script>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="main.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Agenda de Organizacion del Tiempo</title>
+    <!--JS/JQ import-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+      <script src="JS/usuario.js"></script>
+      <script src="JS/actividad.js"></script>
+</head>
+<body class="solicitud">
+
+    <main>
+    <header>
+        <nav>
+    <div class="nav-wrapper green darken-2">
+      <a href="login.html" class="brand-logo">WHAT I DID</a>
+      <a href="#" data-activates="hamburger" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><h4 id="usernameText">User Name</h4></li>
+        <li><a href="user.html"><i class="material-icons">perm_identity</i></a></li>
+        <li><a href="timeLine.html"><i class="material-icons">today</i></a></li>
+
+      </ul>
+      <ul class="side-nav" id="hamburger">
+        <li><a href="user.html"><i class="material-icons left">perm_identity</i>User</a></li>
+        <li><a href="timeLine.html"><i class="material-icons left">today</i>Timeline</a></li>
+        
+     </ul>
+    </div>
+  </nav>
+    </header>
+    <br>
+    <br>
+    <div class="container">
+    <article class="card-panel orange li-2 hoverable">
+        <div><h3>Profile</h3></div>
+
+        <form class="col s12">
+
+            <div class="row">
+        <div class="input-field col s5 ">
+          <i class="material-icons prefix">perm_identity</i>
+          <input id="icon_prefix" type="text" class="validate" placeholder="Name">
+        </div>
+
+          <div class="input-field col s5 ">
+            <i class="material-icons prefix">perm_identity</i>
+            <input id="icon_prefix" type="text" class="validate" placeholder="UserName">
+          </div>
+
+
+
+      </div>
+
+
+       <div class="row">
+       <div class="input-field col s5">
+          <i class="material-icons prefix">supervisor_account</i>
+          <input id="icon_prefix" type="text" class="validate" placeholder="New Password">
+        </div>
+
+
+
+
+        </div>
+
+
+
+
+        <div class="row">
+          <div class="input-field col s5">
+             <i class="material-icons prefix">email</i>
+             <input id="icon_prefix" type="text" class="validate" placeholder="E-Mail">
+           </div>
+
+           <div class="input-field col s5">
+              <i class="material-icons prefix">location_on</i>
+              <input id="icon_prefix" type="text" class="validate" placeholder="Location">
+            </div>
+        </div>
+
+        <div class="row">
+          <button class="btn waves-effect waves-light green darken-2" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+          </button>
+          </div>
+        </div>
+
+
+
+
+
+
+    </form>
+  </div>
+    </article>
+        </div>
+
+
+</main>
+   <footer class="page-footer green darken-2">
+<div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class=" row white-text">Autors</h5>
+                <p class="row grey-text text-lighten-4">Aurelio Canto Macías 146562</p>
+                  <p class="row grey-text text-lighten-4">Diego Rodiguez Sanchez 146245</p>
+                  <p class="row grey-text text-lighten-4">Rodolfo Rivera Vazquez 146356</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Contact</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">aurelio.cantoms@udlap.mx</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">rodolfo.riveravz@udlap.mx</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">diego.rodriguezsz@udlap.mx</a></li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">2015 Sistemas Distribuidos
+
+            <a class="grey-text text-lighten-4 right" href="http://www.udlap.mx">© Universidad de las Américas Puebla</a>
+            </div>
+          </div>
+    </footer>
+<script>$(document).ready($(".button-collapse").sideNav());</script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+    <!--Google fonts-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--CSS-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="main.css"/>
+
+    <title>Time Management Agenda</title>
+    <!--JS/JQ import-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('.parallax').parallax();
+    });</script>
+    <script>
+    $(document).ready(function(){
+    $('.modal-trigger').leanModal();
+  });</script>
+
+    <script src="JS/usuario.js"></script>
+
+</head>
+
+<body>
+  <header>
+        <nav>
+    <div class="nav-wrapper green darken-2">
+      <a href="activityLog.html" class="brand-logo">WHAT I DID</a>                                                <!--   href="#otronavegador"   -->
+    <ul class="right hide-on-med-and-down"><li><a class="waves-effect waves-light modal-trigger" href="#modal1"><i class="material-icons right">perm_identity</i>Log In</a></li>
+
+        </ul>
+    </div>
+  </nav>
+    </header>
+    <div id="modal1" class="modal card-panel orange ">
+    <div class="modal-content ">
+
+        <div >
+            <h3>Log In</h3>
+
+
+      </div>
+    <div class="row">
+      <form class="col s12" action="http://whatidid.acrasystems.com.mx/PHP/accesousuariosJ.php?"   method="post">
+
+      <div class="row">
+          <div class="input-field col s6">
+
+              <input id="user_nameemail" class="validate" type="email" name="correo">      <label for="user_name">E-mail or username</label>
+          </div>
+
+      </div>
+          <div class="row">
+          <div class="input-field col s6">
+              <input id="passwordlogin"  type="password" name="clave" >
+              <label for="password">Password </label>
+          </div>
+
+      </div>
+      <div class="row">
+          <button   onsubmit=" login()" onclick="login()"class="btn waves-effect waves-light green darken-2" type="submit" name="action" >Submit
+  <i class="material-icons right">send</i>
+</button>
+      <a href="register.html"><span class="grey-text text-darken-4">Not an user? Register!</span></a>
+
+      </div>
+      </form>
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <div id="otronavegador" class="modal card-panel orange hoverable ">
+    <div class="modal-content center-align">
+
+        <h3 class=" center-align">SE SUGUIERE USAR GOOGLE CHROME</h3>
+        <a class="btn waves-effect waves-light green darken-2 " href="https://www.google.com.mx/chrome/browser/desktop/">DESCARGAR</a>
+
+    </div>
+  </div>
+
+  <div id="clavemal" class="modal card-panel orange hoverable ">
+    <div class="modal-content center-align">
+
+        <h3 class=" center-align">Clave Incorrecta</h3>
+        <a class="btn waves-effect waves-light green darken-2 " href="https://www.google.com.mx/chrome/browser/desktop/">Recuperar Clave</a>
+
+    </div>
+  </div>
+
+  <div id="correomal" class="modal card-panel orange hoverable ">
+    <div class="modal-content center-align">
+
+        <h3 class=" center-align">El Correo no exite o no ha sido registros</h3>
+        <a class="btn waves-effect waves-light green darken-2 " href="register.html">Registrar Cuenta</a>
+
+    </div>
+  </div>
+
+
+<main>
+
+<div class="parallax-container">
+    <div class="parallax"><img src="images/timemanagement_1600x900.jpg"></div>
+  </div>
+  <div class="section white">
+    <div class="row container">
+      <h2 class="header">What I Did</h2>
+      <p class="flow-text grey-text text-darken-3 lighten-3">An usefull web app to manage your time in a beautifull and intelligent way, as you always ask yourself: "What i did?".</p>
+    </div>
+
+  </div>
+  <div class="card-panel orange hoverable" id="panelLogin">
+        <div >
+            <h3>Sign up now!</h3>
+
+
+      </div>
+    <div class="row">
+        <form class="col s12" id="datos" action="http://whatidid.acrasystems.com.mx/PHP/adduser.php?"   method="post">
+
+        <div class="row">
+            <div class="input-field col s3">
+                <input id="username" class="validate" type="text"  name = "username"  required>
+                <label  for="username">Username</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="fullname" class="validate" type="text"  name="fullname" required>
+                <label  for="fullname">Full name</label>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="email" class="validate" type="email"  name="email" required>
+                <label  for="email">E-mail</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="password" class="validate" type="password"  name="pass" required >
+                <label  for="password">Password</label>
+            </div>
+
+        </div>
+        <div class="row">
+            <button class="btn waves-effect waves-light green darken-2" type="submit"  onclick="singup()" onsubmit="singup()">Submit
+    <i class="material-icons right">send</i>
+  </button>
+            <a href="login.html"><span class="grey-text text-darken-4">Alredy an user? Sign in!</span></a>
+        </div>
+        </form>
+
+
+      </div>
+</div>
+
+
+</main>
+    <footer class="page-footer green darken-2">
+<div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class=" row white-text">Autors</h5>
+                <p class="row grey-text text-lighten-4">Aurelio Canto Macías 146562</p>
+                  <p class="row grey-text text-lighten-4">Diego Rodiguez Sanchez 146245</p>
+                  <p class="row grey-text text-lighten-4">Rodolfo Rivera Vazquez 146356</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Contact</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">aurelio.cantoms@udlap.mx</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">rodolfo.riveravz@udlap.mx</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">diego.rodriguezsz@udlap.mx</a></li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">2015 Sistemas Distribuidos
+
+            <a class="grey-text text-lighten-4 right" href="http://www.udlap.mx">© Universidad de las Américas Puebla</a>
+            </div>
+          </div>
+    </footer>
+</body>
+
+</html>

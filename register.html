@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="main.css"/>
+    <title>Time Management Agenda</title>
+    <!--JS/JQ import-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
+    <script src="JS/usuario.js"></script>
+
+</head>
+<body>
+    <main>
+        <header>
+        <nav>
+    <div class="nav-wrapper green darken-2">
+      <a href="login.html" class="brand-logo">WHAT I DID</a>
+
+    </div>
+  </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+
+    <div class="card-panel orange hoverable" id="panelLogin">
+        <div >
+            <h3>Sign up now!</h3>
+
+
+      </div>
+    <div class="row">
+        <form class="col s12" id="datos" action="http://whatidid.acrasystems.com.mx/PHP/adduser.php?">
+        <div class="row">
+            <div class="input-field col s3">
+                <!--<h6>Name</h6>-->
+                <input id="username" class="validate" type="text"  name = "username">
+                <label  for="username">Username</label>
+            </div>
+            <div class="input-field col s6">
+                <!--<h6>Last Name</h6>-->
+                <input id="fullname" class="validate" type="text"  name="fullname">
+                <label  for="fullname">Full name</label>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+              <!--<h6>E-Mail</h6>-->
+                <input id="email" class="validate" type="email"  name="email">
+                <label  for="email">E-mail</label>
+            </div>
+            <div class="input-field col s6">
+                <!--<h6>Password</h6>-->
+                <input id="password" class="validate" type="password"  name="pass">
+                <label  for="password">Password</label>
+            </div>
+
+        </div>
+        <div class="row">
+            <button class="btn waves-effect waves-light green darken-2" type="submit"  onclick="singup()">Submit
+    <i class="material-icons right">send</i>
+  </button>
+            <a href="login.html"><span class="grey-text text-darken-4">Alredy an user? Sign in!</span></a>
+        </div>
+        </form>
+
+
+      </div>
+</div>
+</main>
+    <footer class="page-footer green darken-2">
+<div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class=" row white-text">Autors</h5>
+                <p class="row grey-text text-lighten-4">Aurelio Canto Macías 146562</p>
+                  <p class="row grey-text text-lighten-4">Diego Rodiguez Sanchez 146245</p>
+                  <p class="row grey-text text-lighten-4">Rodolfo Rivera Vazquez 146356</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Contact</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">aurelio.cantoms@udlap.mx</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">rodolfo.riveravz@udlap.mx</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">diego.rodriguezsz@udlap.mx</a></li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">2015 Sistemas Distribuidos
+
+            <a class="grey-text text-lighten-4 right" href="http://www.udlap.mx">© Universidad de las Américas Puebla</a>
+            </div>
+          </div>
+    </footer>
+</body>
+</html>

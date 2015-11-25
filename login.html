@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="main.css"/>
+    <title>Time Management Agenda</title>
+     <!--JS/JQ import-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</head>
+<body>
+<header>
+        <nav>
+    <div class="nav-wrapper green darken-2">
+      <a href="home.html" class="brand-logo">WHAT I DID</a>
+
+    </div>
+  </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+
+    <div class="card-panel orange li-2 hoverable" id="panelLogin">
+        <div >
+            <h3>Log In</h3>
+
+
+      </div>
+    <div class="row">
+        <form class="col s12" action="http://whatidid.acrasystems.com.mx/PHP/accesousuariosJ.php?"   method="post">
+
+        <div class="row">
+            <div class="input-field col s6">
+
+                <input id="user_name" class="validate" type="text" name="correo">      <label for="user_name">E-mail or username</label>
+            </div>
+
+        </div>
+            <div class="row">
+            <div class="input-field col s6">
+                <input id="password"  type="password" name="clave">
+                <label for="password">Password </label>
+            </div>
+
+        </div>
+        <div class="row">
+            <button class="btn waves-effect waves-light green darken-2" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+        <a href="register.html"><span class="grey-text text-darken-4">Not an user? Register!</span></a>
+
+        </div>
+        </form>
+
+
+      </div>
+</div>
+</body>
+</html>

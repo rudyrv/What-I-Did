@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+    <script src="materialize/js/materialize.js"></script>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="main.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Time Management Agenda</title>
+    <!--JS/JQ import-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+      <script src="JS/usuario.js"></script>
+      <script src="JS/actividad.js"></script>
+
+
+</head>
+<body class="solicitud" onload="iniciar()">
+
+    <main>
+    <header>
+        <nav>
+    <div class="nav-wrapper green darken-2">
+      <a href="login.html" class="brand-logo">WHAT I DID</a>
+      <a href="#" data-activates="hamburger" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><h4 id="usernameText">User Name</h4></li>
+        <li><a href="user.html"><i class="material-icons">perm_identity</i></a></li>
+        <li><a href="timeLine.html"><i class="material-icons">today</i></a></li>
+
+      </ul>
+      <ul class="side-nav" id="hamburger">
+        <li><h4 id="usernameTextChico">User Name</h4></li>
+        <li><a href="user.html"><i class="material-icons left">perm_identity</i>User</a></li>
+        <li><a href="timeLine.html"><i class="material-icons left">today</i>Timeline</a></li>
+        <li><a href="timeLine.html"><i class="material-icons left">today</i>Timeline</a></li>
+
+     </ul>
+    </div>
+  </nav>
+    </header>
+    <br>
+    <br>
+    <div class="container">
+    <article class="card-panel orange li-2 hoverable">
+        <div><h3>Activity Log</h3></div>
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+        <div class="input-field col s5 ">
+          <i class="material-icons prefix">assignment_ind</i>
+          <input id="icon_prefix" type="text" class="validate" placeholder="Activity">
+
+
+        </div>
+          <div class="input-field col s6">
+          <select class="browser-default orange  lighten-1">
+      <option value="" disabled selected>Category</option>
+      <option value="1">Sports</option>
+      <option value="2">Education</option>
+      <option value="3">Entertainment</option>
+    </select>
+
+
+      </div>
+      </div>
+
+       <div class="row">
+       <div class="input-field col s5">
+          <i class="material-icons prefix">location_on</i>
+          <input id="icon_prefix" type="text" class="validate" placeholder="Location">
+        </div>
+        </div>
+
+      <div class="row">
+          <div class="input-field col s3">
+          <i class="material-icons prefix">today</i>
+          <input id="icon_prefix" type="date" class="datepicker" placeholder="Date">
+
+
+        </div>
+        <div class="input-field col s2">
+            <input disabled value="To" type="text" class="datepicker" >
+        </div>
+
+          <div class="input-field col s3">
+          <i class="material-icons prefix">today</i>
+          <input id="icon_prefix" type="date" class="datepicker" placeholder="Fecha">
+
+
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="input-field col s3">
+        <i class="material-icons prefix">query_builder</i>
+        <input class="validate" type="time">
+        </div>
+
+        <div class="input-field col s2">
+            <input disabled value="To" type="text" class="datepicker" >
+        </div>
+
+        <div class="input-field col s3">
+        <i class="material-icons prefix">query_builder</i>
+        <input class="validate" type="time">
+        </div>
+
+      </div>
+
+
+        <div class="row">
+            <div class="input-field col s2">
+                <input name="group1" type="radio" id="thumbs_up"/>
+                <label for="thumbs_up"><i class="material-icons right">thumb_up</i></label>
+
+            </div>
+            <div class="input-field col s2">
+                <input name="group1" type="radio" id="thumbs_down"/>
+                <label for="thumbs_down"><i class="material-icons right">thumb_down</i></label>
+            </div>
+        </div>
+
+        <div class="row">
+        <!--<div class="input-field col s6">
+        <i class="material-icons prefix">thumbs_up_down</i>
+        <input class="orange" type="range"  min="0" max="100" /> </div>-->
+
+        <div class="input-field col s5">
+            <button class="btn waves-effect waves-light green darken-2" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+
+        </div>
+        </div>
+
+
+
+    </form>
+  </div>
+    </article>
+        </div>
+
+
+</main>
+   <footer class="page-footer green darken-2">
+<div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class=" row white-text">Autors</h5>
+                <p class="row grey-text text-lighten-4">Aurelio Canto Macías 146562</p>
+                  <p class="row grey-text text-lighten-4">Diego Rodiguez Sanchez 146245</p>
+                  <p class="row grey-text text-lighten-4">Rodolfo Rivera Vazquez 146356</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Contact</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">aurelio.cantoms@udlap.mx</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">rodolfo.riveravz@udlap.mx</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">diego.rodriguezsz@udlap.mx</a></li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">2015 Sistemas Distribuidos
+
+            <a class="grey-text text-lighten-4 right" href="http://www.udlap.mx">© Universidad de las Américas Puebla</a>
+            </div>
+          </div>
+    </footer>
+    <script>$(document).ready($(".button-collapse").sideNav());</script>
+</body>
+</html>

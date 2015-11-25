@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+    <script src="materialize/js/materialize.js"></script>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="main.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Time Management Agenda</title>
+    <!--JS/JQ import-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+      <script src="JS/usuario.js"></script>
+      <script src="JS/actividad.js"></script>
+</head>
+<body>
+
+    <main>
+    <header>
+        <nav>
+    <div class="nav-wrapper green darken-2">
+      <a href="login.html" class="brand-logo">WHAT I DID</a>
+      <a href="#" data-activates="hamburger" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><h4 id="usernameText">User Name</h4></li>
+        <li><a href="user.html"><i class="material-icons">perm_identity</i></a></li>
+        <li><a href="timeLine.html"><i class="material-icons">today</i></a></li>
+
+      </ul>
+      <ul class="side-nav" id="hamburger">
+        <li><a href="user.html"><i class="material-icons left">perm_identity</i>User</a></li>
+        <li><a href="timeLine.html"><i class="material-icons left">today</i>Timeline</a></li>
+        
+     </ul>
+    </div>
+  </nav>
+    </header>
+    <div class="card-panel orange hoverable">
+        <div class="input-field col s6">
+          <select class="browser-default orange  lighten-1">
+      <option value="" disabled selected>Time view</option>
+      <option value="1">Day</option>
+      <option value="2">Week</option>
+      <option value="3">Month</option>
+    </select>
+
+
+      </div>
+        <ul class="collection">
+    <li class="collection-item avatar hoverable">
+      <i class="material-icons circle green">insert_chart</i>
+      <span class="title">Activity</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">thumb_down</i></a>
+    </li>
+    <li class="collection-item avatar hoverable">
+      <i class="material-icons circle green">insert_chart</i>
+      <span class="title">Activity</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">thumb_up</i></a>
+    </li>
+    <li class="collection-item avatar hoverable">
+      <i class="material-icons circle green">insert_chart</i>
+      <span class="title">Activity</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">thumb_down</i></a>
+    </li>
+    <li class="collection-item avatar hoverable">
+      <i class="material-icons circle green">insert_chart</i>
+      <span class="title">Activity</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">thumb_down</i></a>
+    </li>
+            <li class="collection-item avatar hoverable ">
+      <i class="material-icons circle green">insert_chart</i>
+      <span class="title">Activity</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">thumb_up</i></a>
+
+    </li>
+            <li class="collection-item avatar hoverable ">
+      <i class="material-icons circle green">insert_chart</i>
+      <span class="title">Activity</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">thumb_up</i></a>
+
+    </li>
+            <li class="collection-item avatar hoverable ">
+      <i class="material-icons circle green">insert_chart</i>
+      <span class="title">Activity</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">thumb_up</i></a>
+
+    </li>
+
+  </ul>
+        <div class="divider"></div>
+
+
+
+
+    </div>
+
+
+</main>
+    <footer class="page-footer green darken-2">
+<div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class=" row white-text">Autors</h5>
+                <p class="row grey-text text-lighten-4">Aurelio Canto Macías 146562</p>
+                  <p class="row grey-text text-lighten-4">Diego Rodiguez Sanchez 146245</p>
+                  <p class="row grey-text text-lighten-4">Rodolfo Rivera Vazquez 146356</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Contact</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">aurelio.cantoms@udlap.mx</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">rodolfo.riveravz@udlap.mx</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">diego.rodriguezsz@udlap.mx</a></li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">2015 Sistemas Distribuidos
+
+            <a class="grey-text text-lighten-4 right" href="http://www.udlap.mx">© Universidad de las Américas Puebla</a>
+            </div>
+          </div>
+    </footer>
+    <script>$(document).ready($(".button-collapse").sideNav());</script>
+</body>
+</html>
